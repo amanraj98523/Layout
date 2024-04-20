@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #main {
+        border: 2px solid black;
+        height: 1000px;
+        width: 100%;
+      }
+      /*------box1------------------------------------------------------*/
+      #box1 {
+        border: 1px solid white;
+        height: 50px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        display: flex;
+        justify-content: baseline;
+        margin-left: 10px;
+        margin-top: 10px;
+        gap: 80px;
+      }
+      #box1 > span {
+        display: flex;
+      }
+
+      /*------------------------------box2----------------------------------------------------*/
+      #box2 {
+        border: 1px solid white;
+        height: 300px;
+        width: 90%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        margin: 10px;
+        margin-left: 60px;
+        padding: 10px;
+        display: flex;
+        gap: 10px;
+      }
+      #box2 > div {
+        border: 2px solid white;
+        height: 300px;
+        width: 23%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        margin-left: 15px;
+        background-position: center;
+      }
+      #box2>div:nth-of-type(1)
+      {
+        background-image: url(earphone1.png);
+      }
+      #box2>div:nth-of-type(2)
+      {
+        background-image: url(earphone1.png);
+      }
+      #box2>div:nth-of-type(3){
+        background-image: url(bluethooth.jpg);
+      }
+      #box2>div:nth-of-type(4){
+        background-image: url(portablebluethooth.jpg);
+      }
+
+
+     
+      /*----------------------------------------------------box3----------------------------------------------------*/
+      #box3 {
+        border: 1px solid white;
+        background-image:url(middle.jpg);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        height: 200px;
+        width: 90%;
+        margin: 10px;
+        padding: 10px;
+        margin-left: 60px;
+      }
+      #box3 > img {
+        height: 50px;
+        width: 100%;
+      }
+      /*-------------------------------------------------------------------------------box4-----------------*/
+
+      #box4 {
+        border: 1px solid white;
+        height: 300px;
+        width: 90%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        margin: 10px;
+        margin-left: 60px;
+        padding: 10px;
+        display: flex;
+        gap: 10px;
+      }
+      #box4 > div {
+        border: 2px solid white;
+        height: 300px;
+        width: 23%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        margin-left: 15px;
+      }
+      #box4>div:nth-of-type(1)
+      {
+        background-image: url(charger.jpg);
+      }
+      #box4>div:nth-of-type(2)
+      {
+        background-image: url(charger2.jpg);
+      }
+      #box4>div:nth-of-type(3){
+        background-image: url(wire.jpg);
+      }
+      #box4>div:nth-of-type(4){
+        background-image: url(wire.jpg);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <!--box1-->
+      <div id="box1">
+        <img
+          src="data:image/png;base64,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"
+        />
+        <span style="color: red">Store</span>
+        <span>Phone</span>
+        <span>TV & Smart Home</span>
+        <span>Tablet</span>
+        <span>LifeStyle</span>
+        <span>Discover</span>
+        <span>Support</span>
+        <img
+          src="data:image/png;base64,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
+                                4POnt9LL7rzZ8fN7PP6qByW0b1XyFUtOd7sOGni1rce4E+tTj/ebKmHVtwT2Qtevu3W6ebtLb1LDdi25uOEWZ3PlZZ12Tcye6FAjer83aGHxK1PnUWehb3OgLmyfVolxNEjLT1wTNRGLl91D2AYEjp+1Lgvr087QL81JWtmzLAozmdnU2TIgbzuFrw+nw5EL0SvjzmJXZS4fqiVk3HKeo4+csy26wsI/x9/xzghAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQf4V/gOdAURpZNg2jgAAAABJRU5ErkJggg=="
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3iv7yzdOQSPfns_RkYtLrarpsZUQnQCxyCQ&usqp=CAU"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lhPxshkoqO8Kp-roGdN42r_myiUpIyW3HQ&usqp=CAU"
+        />
+      </div>
+
+      <!---box2-->
+      <div id="box2">
+        <div>
+          <h3>Redmi Earphones</h3>
+          <button
+            style="
+              color: red;
+              background-color: orange;
+              border: 1px solid orange;
+            "
+          >
+            25% off
+          </button>
+         <!--<img src="earphone1.png" style="width: 100%; height: 100%" />--> 
+        </div>
+        <div>
+          <h3>MI Dual Driver In-ear Earphones</h3>
+          <button
+            style="
+              color: red;
+              background-color: orange;
+              border: 1px solid orange;
+            "
+          >
+            20% off
+          </button>
+          <!--<img src="earphone1.png" style="width: 100%; height: 100%" />-->
+        </div>
+        <div>
+          <h3>Redmi Sonic Bass Wireless<br />Earphones 2</h3>
+          <button
+            style="
+              color: red;
+              background-color: orange;
+              border: 1px solid orange;
+            "
+          >
+            56% off
+          </button>
+         <!---<img src="bluethooth.jpg" style="width: 100%; height: 100%" />-->
+        </div>
+        <div>
+          <h3>Mi Portable Bluetooth<br />Speaker(16w)</h3>
+          <button
+            style="
+              color: red;
+              background-color: orange;
+              border: 1px solid orange;
+            "
+          >
+            28% off
+          </button>
+          <!--<img src="portablebluethooth.jpg" style="width: 100%; height: 100%" />-->
+        </div>
+      </div>
+      <br />
+      <!---box3-->
+      <div id="box3">
+        <h3>Save Up to 65%<br />On Charge & Cables</h3>
+        <p>Free Delivery on All Products</p>
+        <button>Buy Now</button>
+      </div>
+
+      <!---box4-->
+    <div id="box4">
+      <div>
+        <h3>Xiaomi 120W<br />HyperCharge Adapter...</h3>
+        <button
+          style="color: red; background-color: orange; border: 1px solid orange"
+        >
+          50% off
+        </button>
+        <!--<img src="charger.jpg" style="width: 100%; height: 100%" />-->
+      </div>
+      <div>
+        <h3>Mi 2A Fast Charger with<br />Cable</h3>
+        <button
+          style="color: red; background-color: orange; border: 1px solid orange"
+        >
+          25% off
+        </button>
+        <!--<img src="charger2.jpg" style="width: 100%; height: 100%" />-->
+      </div>
+      <div>
+        <h3>Xiaomi SonicCharge 2.0<br />Cable</h3>
+        <button
+          style="color: red; background-color: orange; border: 1px solid orange"
+        >
+          64% off
+        </button>
+        <!--<img src="wire.jpg" style="width: 100%; height: 100%" />-->
+      </div>
+      <div>
+        <h3>Mi 18W Dual Port Charger<br />+Mi USB Cable 120cm...</h3>
+        <button
+          style="color: red; background-color: orange; border: 1px solid orange"
+        >
+          35% off
+        </button>
+       <!--<img src="chargerlast.jpg" style="width: 100%; height: 100%" />-->
+      </div>
+    </div>
+  </body>
+</html>
